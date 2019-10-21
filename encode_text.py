@@ -23,3 +23,13 @@ print("The encoded text is:", encoded)
 
 
 # decode the text back to the original value!
+decoded = ""
+for i in encoded:
+    pos = alphabet.find(i)
+    if pos > seed:
+        decoded += alphabet[pos-seed]
+    else:
+        pos = seed - pos
+        decoded += alphabet[-pos]
+
+print("The decoded text is:", decoded)

@@ -90,3 +90,11 @@ print("Sorted list:", a)
 
 # Which sort is the best? Which is the worst?
 # Which of the algorithms are recursive?
+"""
+The best algorithm is the Quick Sort. This is because it avoids comparing all of the values to each other. The Merge
+Sort follows a similar principal. Still takes twice the time. On the other hand the Bubble Sort is the worst by far.
+It compares each value, as they move upwards (like a bubble). This increases considerably the number of iterations.
+
+Both the Quick Sort and the Merge Sort are recursive. This means that they "call" themselfs during exection. This can 
+be seen in lines 12 & 13 for the Quick Sort, and on lines 44 & 45 on the Merge Sort.
+"""

@@ -7,3 +7,7 @@ else:
 
 
 # check if all the letters are tripled
+if word[::3] == word[1::3] == word[2::3]:
+    print("All the letters are tripled")
+else:
+    print("Not all the letters are tripled")

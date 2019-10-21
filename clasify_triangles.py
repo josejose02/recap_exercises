@@ -47,3 +47,5 @@ else:
     print("Acute")
 
 # Print the area of the Triangle
+area = ((max/2) * min1)/2 + ((max/2) * min2)/2
+print("The area is:", area)

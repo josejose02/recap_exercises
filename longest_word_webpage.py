@@ -41,6 +41,24 @@ all_words.sort()
 print("all the words are", all_words)
 print("distinct words", len(all_words))
 
+fd.close()
+
 # write a program that counts all the distinct words that appear at least twice in the file
+fd = open("trex.txt", "r")
+list_of_words = {}
+for line in fd:
+    for c in punctuation2:
+        line = line.replace(c, " ")
+    words = line.split()
+    for word in words:
+        if word in list_of_words:
+            list_of_words[word] += 1
+        else:
+            list_of_words[word] = 1
 
+list_complete = []
+for i in list_of_words.keys():
+    if list_of_words[i] > 1:
+        list_complete.append(i)
 
+print(list_complete)
